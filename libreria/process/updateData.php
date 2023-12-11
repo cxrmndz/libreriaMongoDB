@@ -10,6 +10,9 @@
     $type = $_POST['type'];
     $id = $_POST['id'];
 
+    /**
+     * arreglo para modificacion de autores
+     */
     $data = array(
         "nombre" => $_POST['nombre'],
         "apellido" => $_POST['apellido'],
@@ -17,6 +20,9 @@
         "nacionalidad" => $_POST['nacionalidad']
     );
 
+    /**
+     * arreglo para modificacion de libros
+     */
     $dataBook = array(
         "idAutor" => $_POST['idAutor'],
         "titulo" => $_POST['titulo'],

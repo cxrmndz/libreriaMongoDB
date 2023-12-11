@@ -5,6 +5,7 @@
     class Crud extends Connection{
         /**
          * Obtener los datos a mostrar en las tablas por tipo de dato
+         * $type tipo de dato a obtener ejm: libro, autor
          */
         public function dataShow($type){
             try {
@@ -21,6 +22,8 @@
 
         /**
          * Listado de libros por autor
+         * $type tipo de dato a obtener ejm: libro, autor
+         * $idAutor identificador del autor
          */
 
         public function dataBookShow($type, $idAuthor){
@@ -42,6 +45,8 @@
 
         /**
          * Obtener la informacion de un tipo de dato por id de tabla
+         * $type tipo de dato a obtener ejm: libro, autor
+         * $id objeto identificador del tipo de dato  propio de mongodb
          */
         public function getData($id, $type){
             try {
@@ -62,6 +67,8 @@
 
         /**
          * insertar datos en la base
+         * $type tipo de dato a obtener ejm: libro, autor
+         * $data arreglo de datos a insertar
          */
         public function insertData($data, $type){
             try {
@@ -77,6 +84,8 @@
 
         /**
          * eliminar datos de la base
+         * $type tipo de dato a obtener ejm: libro, autor
+         * $id identificador del registro a eliminar propio de mongodb
          */
         public function deleteData($id, $type){
                 try {
@@ -94,6 +103,9 @@
 
         /**
          * actualizar datos de la base
+         * $type tipo de dato a obtener ejm: libro, autor
+         * $id identificador del objeto a modificar propio de mongodb
+         * $data arreglo de datos a modificar
          */
         public function updateData($id, $type, $data){
             try {
@@ -112,6 +124,7 @@
 
         /**
          * mostrar popups interactivos de acuerdo al tipo de operacion realizada
+         * $message identificador del tipo de mensaje a mostrar
          */
         public function showMessages($message){
             $msg = "";

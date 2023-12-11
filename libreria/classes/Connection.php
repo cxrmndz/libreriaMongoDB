@@ -8,6 +8,7 @@
     class Connection{
         /**
          * metodo que realiza la conexion a la base de datos
+         * $ejm cadena de conexion: mongodb://admin:1234abcd@localhost:27017/libreria
          */
         public function connect(){
             try {

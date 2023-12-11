@@ -9,6 +9,9 @@
     $type = $_POST['type'];
     $returnLink = "";
 
+    /**
+     * arreglo para insercion de autores
+     */
     $data = array(
         "nombre" => $_POST['nombre'],
         "apellido" => $_POST['apellido'],
@@ -16,6 +19,9 @@
         "nacionalidad" => $_POST['nacionalidad']
     );
 
+    /**
+     * arreglo para insercion de libros
+     */
     $dataBook = array(
         "idAutor" => $_POST['idAutor'],
         "titulo" => $_POST['titulo'],
